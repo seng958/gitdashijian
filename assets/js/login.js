@@ -41,8 +41,9 @@ $(function() {
                     return layer.msg(res.message)
                 }
                 layer.msg(res.message)
+
                 $('#link_login').click()
-                    // localStorage.setItem('user', json.)
+
                 $("#form_reg [name=user]").val('')
                 $("#form_reg [name=password]").val("")
             })
@@ -61,11 +62,13 @@ $(function() {
             if (res.status !== 0) {
                 return layer.msg(res.message)
             }
-            layer.msg("denglu")
+            layer.msg("登陆成功")
                 // $("#form_deng [name=user]").val('')
                 // $("#form_deng [name=password]").val("")
                 // 创建本地 缓存 名字 为token 
-            localStorage.setItem('token', res.token)
+
+            localStorage.setItem('tokec', res.token)
+            console.log(res);
             location.href = '/index.html'
         })
     })
