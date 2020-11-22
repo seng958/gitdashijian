@@ -48,7 +48,7 @@ function getqinghqiu() {
 
 function renderAvatar(user) {
     // 1. 获取用户的名称
-    console.log(user);
+    // console.log(user);
     var name = user.nickname || user.username
         // 2. 设置欢迎的文本
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
