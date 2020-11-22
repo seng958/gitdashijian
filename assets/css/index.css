@@ -16,15 +16,6 @@
     margin-left: 20px;
 }
 
-
-/* #btnLogout::before {
-    content: "";
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-} */
-
 .icon-tuichu:before {
     content: "\e865";
 }
