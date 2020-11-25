@@ -67,6 +67,7 @@ $(function() {
             // 3. 将文章的发布状态，存到 fd 中
         fd.append('state', art_state)
             // 4. 将封面裁剪过后的图片，输出为一个文件对象
+        console.log(fd);
         $image
             .cropper('getCroppedCanvas', {
                 // 创建一个 Canvas 画布
@@ -79,7 +80,8 @@ $(function() {
                 // 5. 将文件对象，存储到 fd 中
                 fd.append('cover_img', blob)
                     // 6. 发起 ajax 数据请求
-                publishArticle(fd)
+                console.log(fd);
+                // publishArticle(fd)
             })
     })
 
